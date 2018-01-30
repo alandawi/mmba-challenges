@@ -1,4 +1,4 @@
-## Challenge - Request API
+## Challenge - Arrays 01
 
 ```
 npm install
