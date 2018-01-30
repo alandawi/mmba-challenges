@@ -49,13 +49,23 @@ describe("a) Get last item", function() {
 
 // isChristmas
 describe("b) Is it Christmas?", function() {
-  it('should return true', function(done) {
-    assert.equal(isChristmas(new Date( 2018, 11, 24 )), true);
+  it('should return an array', function(done) {
+    expect(isChristmas(new Date( 2018, 11, 24 ))).to.be.array;
     done();
   });
 
   it('should return false', function(done) {
-    assert.equal(isChristmas(new Date( 2018, 0, 23 )), false);
+    assert.equal(isChristmas(new Date( 2018, 0, 23 ))[1], false);
+    done();
+  });
+
+  it('should return true', function(done) {
+    assert.equal(isChristmas(new Date( 2018, 11, 24 ))[1], true);
+    done();
+  });
+
+  it('should return a string', function(done) {
+    expect(isChristmas(new Date( 2018, 11, 24 ))[0]).to.be.an('string');
     done();
   });
 });

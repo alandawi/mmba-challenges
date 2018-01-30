@@ -6,4 +6,5 @@ function getLastItem(array) {
 function isChristmas(date) {
   return null
 }
+
 /* ===== Your code goes here ===== */
