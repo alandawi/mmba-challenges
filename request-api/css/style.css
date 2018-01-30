@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* General */
+body {
+  font: 16px/1.5 'Roboto', sans-serif;
+  background: #e2e1e1d9;
+}
+
+section {
+  max-width: 840px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+section img {
+  max-width: 840px;
+}
+
+h2 {
+  margin: 50px 0 0 0;
+}
+
+a {
+  color: #ff7800;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* Tests */
+#mocha {
+  margin: 30px 0 30px;
+}
+
+#mocha .test pre {
+  width: 100%;
+}
+
+#mocha-report {
+  border-left: 3px solid #f0f0f0;
+}
